@@ -1,0 +1,41 @@
+<div class="contenido">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Info paquetes</h2>
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Tipo de paquete</th>
+            <th scope="col">Intervalo de kg</th>
+            <th scope="col">Fórmula cálculo precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of package_info">
+            <td>{{ item.tipo }}</td>
+            <td>{{ item.kg }}</td>
+            <td>{{ item.precio }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Trabajadores</h2>
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Correo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of users">
+            <td>{{ item.name }}</td>
+            <td>{{ item.email }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

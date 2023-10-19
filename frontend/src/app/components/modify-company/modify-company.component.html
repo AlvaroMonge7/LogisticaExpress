@@ -1,0 +1,28 @@
+<div class="vh-100 d-flex justify-content-center contenido formulario">
+  <div class="col-md-4">
+    <h2>Nueva Compañia</h2>
+    <form action="/procesar" method="post">
+      <label for="name">Nombre:</label>
+      <input
+        type="text"
+        [(ngModel)]="name"
+        value="{{ name }}"
+        id="name"
+        name="name"
+        required
+      /><br /><br />
+
+      <label for="postal_code">Códigos postales:</label>
+      <input
+        type="text"
+        [(ngModel)]="postal_code"
+        value="{{ postal_code }}"
+        id="postal_code"
+        name="postal_code"
+        required
+      /><br /><br />
+
+      <input (click)="modifyCompany()" class="btn btn-primary" type="submit" value="Enviar" />
+    </form>
+  </div>
+</div>

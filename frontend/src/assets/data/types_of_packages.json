@@ -1,0 +1,27 @@
+[
+  {
+    "tipo": "Paquete ultra ligero",
+    "kg": "0 < kg ≤ 0.1",
+    "precio": "Precio = kg * 5"
+  },
+  {
+    "tipo": "Paquete ligero",
+    "kg": "0.1 < kg ≤ 0.3",
+    "precio": "Precio = kg * 5 + 1"
+  },
+  {
+    "tipo": "Paquete estándar",
+    "kg": "0.3 < kg ≤ 5",
+    "precio": "Precio = kg * 10"
+  },
+  {
+    "tipo": "Paquete pesado",
+    "kg": "5 < kg ≤ 10",
+    "precio": "Precio = kg * 5 + kg + 75"
+  },
+  {
+    "tipo": "Gran volumen",
+    "kg": "10 < kg ≤ ∞",
+    "precio": "Precio = (kg - 10) * 7.5 + 130 + kg"
+  }
+]

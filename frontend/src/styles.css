@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(71, 71, 71);
+}
+.trash{
+    color: red;
+}
+tr{
+    text-align: center;
+}
+.edit{
+    color: aqua;
+}
+.contenido{
+    margin-top: 17%;
+}
+.formulario{
+    color: white;
+}
+h2{
+    color: rgb(212, 212, 212);
+}
+h1{
+    color: white;
+    margin: 20px;
+}

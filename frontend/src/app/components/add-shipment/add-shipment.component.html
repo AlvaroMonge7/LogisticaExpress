@@ -1,0 +1,56 @@
+<div class="vh-100 d-flex justify-content-center contenido formulario">
+  <div class="col-md-10">
+    <h2>Nuevo envío</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="addressee">Destinatario</label>
+          <input
+            [(ngModel)]="addressee"
+            type="text"
+            id="addressee"
+            name="addressee"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="postal_code">Código postal</label>
+          <input
+            [(ngModel)]="postal_code"
+            maxlength="5"
+            pattern="\d{1,5}"
+            type="number"
+            id="postal_code"
+            name="postal_code"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="sender">Remitente</label>
+        <input
+          [(ngModel)]="sender"
+          type="text"
+          id="sender"
+          name="sender"
+          class="form-control"
+        />
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="weigth">Peso</label>
+          <input
+            [(ngModel)]="weigth"
+            type="number"
+            id="weigth"
+            name="weigth"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <button (click)="save()" type="submit" class="btn btn-primary">
+        Enviar
+      </button>
+    </form>
+  </div>
+</div>
