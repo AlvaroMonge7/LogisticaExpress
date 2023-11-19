@@ -420,7 +420,7 @@ app.get("/get_company_by_postal_code/:postal_code", (req, res) => {
         //al no encontrase ninguna empresa con postal_code, se establece "INVENT"
         res.json({
           success: true,
-          company: "INVENT",
+          company: "LogísticaExpress",
         });
       }
     }
